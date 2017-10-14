@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin:0;
+}
+ol,ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    border: 0;
+}
+
+.warpper
+{
+    width: 1226px;
+    margin: 0 auto;
+}
+/*banner开始*/
+.banner{
+    background: url("../img/banner.jpg") no-repeat 50% 50%;
+    height: 120px;
+}
+
+.banner a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*banner结束*/
+/*nav开始*/
+.nav{
+    height: 40px;
+    background: #333;
+}
+.main-menu{
+    overflow: hidden;
+    float: left;
+}
+.nav li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+.main-menu li a, .user-info li a{
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.main-menu a:hover, .user-info a:hover{
+    color: #ffffff;
+}
+.main-menu .sep, .user-info .sep{
+    margin: 0 6px;
+    color: #424242;
+}
+.user-info{
+    float: right;
+}
+.cart{
+    width: 120px;
+    position: relative;
+    text-align: center;
+}
+.cart:hover .cart-box{
+    display: block;
+    animation: show 0.2s ease-in forwards;
+}
+@keyframes show {
+    100%{
+        height: 85px;
+    }
+}
+.cart a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #424242;
+}
+.cart a:hover{
+    background: #ffffff;
+    color: #ff6700;
+}
+.cart-box{
+    width: 316px;
+    height: 0;
+    padding-top: 15px;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    border: 1px solid #e0e0e0 \9;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: none;
+
+}
+/*nav结束*/
+/*header开始*/
+.header{
+    background: #ffffff;
+    height: 100px;
+    position: relative;
+    /*overflow: hidden;*//*外边距合并问题，如果加上之后，溢出隐藏，会看不见二级菜单*/
+}
+.header-logo{
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin-top: 22px;
+    background: url("../img/mi-logo.png" ) no-repeat #ff6700;
+    float: left;
+}
+.header-menu{
+    float: left;
+    margin-left: 185px;
+    height: 100px;
+    line-height: 100px;
+}
+.header-menu .menu-item{
+    float: left;
+    padding:0 10px;
+}
+.header-menu .menu-item a{
+    color: rgb(51,51,51);
+}
+.header-menu .menu-item a:hover{
+    color: #ff6700;
+}
+.sub-menu{
+    height: 0;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    /*display:none;*/
+ }
+/*动画效果*/
+/*.menu-item:hover .sub-menu{*/
+    /*display: block;*/
+    /*animation: new 0.5s ease-in forwards;*/
+/*}*/
+/*@keyframes new {*/
+    /*100%{*/
+        /*height: 226px;*/
+    /*}*/
+/*}*/
+.sub-menu li{
+    width: 204px;
+    height: 201px;
+    float: left;
+    text-align: center;/*可以让行元素居中*/
+}
+.flag{
+    height: 17px;
+    line-height: 17px;
+    margin-bottom: 17px;
+}
+.flag span
+{
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    font-size: 12px;
+    padding: 1px 14px;
+}
+.p-img{
+    height: 110px;
+    display: block;
+    margin-bottom: 12px;
+}
+.p-title{
+    color: #333;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.p-price{
+    height: 20px;
+    line-height: 20px;
+    color: #ff6700;
+    font-size: 12px;
+}
+/*header结束*/
