@@ -123,6 +123,15 @@ img{
     float: left;
     padding:0 10px;
 }
+.header-menu .menu-item:hover .sub-menu{
+    display: block;
+    animation: slide 0.5s ease-in forwards;
+}
+@keyframes slide {
+    100%{
+        height: 226px;
+    }
+}
 .header-menu .menu-item a{
     color: rgb(51,51,51);
 }
@@ -132,27 +141,28 @@ img{
 .sub-menu{
     height: 0;
     width: 100%;
+    background: #ffffff;
     border: 1px solid #e0e0e0;
     position: absolute;
     left: 0;
     top: 100px;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: none;
     /*display:none;*/
  }
-/*动画效果*/
-/*.menu-item:hover .sub-menu{*/
-    /*display: block;*/
-    /*animation: new 0.5s ease-in forwards;*/
-/*}*/
-/*@keyframes new {*/
-    /*100%{*/
-        /*height: 226px;*/
-    /*}*/
-/*}*/
+
+.sub-menu ul{
+    overflow: hidden;
+    width: 1224px;
+    margin:  0 auto;
+}
 .sub-menu li{
     width: 204px;
     height: 201px;
     float: left;
     text-align: center;/*可以让行元素居中*/
+    position: relative;
 }
 .flag{
     height: 17px;
@@ -182,5 +192,13 @@ img{
     line-height: 20px;
     color: #ff6700;
     font-size: 12px;
+}
+.p-line{
+    width: 1px;
+    height: 100px;
+    position: absolute;
+    right:0;
+    top: 36px;
+    background: #e0e0e0;
 }
 /*header结束*/
