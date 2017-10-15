@@ -67,7 +67,7 @@ img{
 }
 .cart:hover .cart-box{
     display: block;
-    animation: show 0.2s ease-in forwards;
+    animation: show 0.5s ease-in forwards;
 }
 @keyframes show {
     100%{
@@ -95,12 +95,10 @@ img{
     right: 0;
     top: 40px;
     display: none;
-
 }
 /*nav结束*/
 /*header开始*/
 .header{
-    background: #ffffff;
     height: 100px;
     position: relative;
     /*overflow: hidden;*//*外边距合并问题，如果加上之后，溢出隐藏，会看不见二级菜单*/
@@ -142,7 +140,7 @@ img{
     height: 0;
     width: 100%;
     background: #ffffff;
-    border: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
     position: absolute;
     left: 0;
     top: 100px;
