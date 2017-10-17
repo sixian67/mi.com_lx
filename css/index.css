@@ -1,12 +1,12 @@
 /*轮播图开始*/
 .slide{
     position: relative;
-    height: 500px;
+    height: 460px;
 }
 
 .img-box img{
     width: 1226px;
-    height: 500px;
+    height: 460px;
     position: absolute;
     left: 0;
     top: 0;
@@ -53,18 +53,39 @@
     width: 128px;
     position: absolute;
     right: 0;
-    bottom: 20px;
+    bottom: 60px;
 }
 /*轮播图结束*/
 
 /*列表开始*/
-.sub-list{
+.sub-directory{
     position: absolute;
     z-index: 1;
-
+    width: 234px;
+    height: 420px;
+    text-align: left;
+    padding: 20px 0;
 }
-.sub-list a{
-    color: #ffffff;
+.sub-directory .title{
+    position: relative;
+    color: #fffdef;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+}
+.sub-directory li:hover{
+    background: #ff6700;
+}
+.sub-directory i{
+    color: #e0e0e0;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    font-size: 16px;
+    line-height: 16px;
+    top: 12px;
+    right: 20px;
 }
 
 /*列表结束*/
