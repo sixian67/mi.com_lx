@@ -74,7 +74,7 @@
     line-height: 42px;
     padding-left: 30px;
 }
-.sub-directory li:hover{
+.sub-directory li:hover {
     background: #ff6700;
 }
 .sub-directory i{
@@ -87,5 +87,20 @@
     top: 12px;
     right: 20px;
 }
+.follow-directory{
+    /*display: none;*/
+    position: absolute;
+    width: 796px;
+    height: 460px;
+    z-index: 1;
+    left: 234px;
+    top: 0;
+}
 
+.next-posterity{
+    background: #ff0000;
+    width: 265px;
+    height: 460px;
+    float: left;
+}
 /*列表结束*/
