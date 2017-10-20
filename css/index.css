@@ -63,7 +63,6 @@
     z-index: 1;
     width: 234px;
     height: 420px;
-    text-align: left;
     padding: 20px 0;
 }
 .sub-directory .title{
@@ -74,8 +73,11 @@
     line-height: 42px;
     padding-left: 30px;
 }
-.sub-directory li:hover {
+.sub-directory .option:hover {
     background: #ff6700;
+}
+.sub-directory .option:hover .follow-directory{
+    display: block;
 }
 .sub-directory i{
     color: #e0e0e0;
@@ -95,12 +97,53 @@
     z-index: 1;
     left: 234px;
     top: 0;
+    border: 1px solid #e0e0e0;
 }
 
 .next-posterity{
-    background: #ff0000;
+    background: #ffffff;
     width: 265px;
     height: 460px;
     float: left;
+}
+.next-posterity li{
+    width: 265px;
+    height: 76px;
+}
+.next-posterity img{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.link1{
+    display: inline-block;
+    width: 170px;
+    padding: 18px 20px ;
+    padding-right: 0;
+    color: #333333;
+    font-size: 14px;
+    line-height: 40px;
+}
+.link1:hover{
+    color: #ff6700;
+}
+.link2{
+     display: inline-block;
+     top: 26px;
+     right: 10px;
+     width: 58px;
+     height: 22px;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    color: #ff6700;
+     background: #ffffff;
+    border: 1px solid #b0b0b0;
+ }
+.link2:hover{
+    background: #ff6700;
+    color: #ffffff;
 }
 /*列表结束*/
