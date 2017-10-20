@@ -76,7 +76,16 @@
 .sub-directory .option:hover {
     background: #ff6700;
 }
-.sub-directory .option:hover .follow-directory{
+.sub-directory .option:hover .follow-directory-1{
+    display: block;
+}
+.sub-directory .option:hover .follow-directory-2{
+    display: block;
+}
+.sub-directory .option:hover .follow-directory-3{
+    display: block;
+}
+.sub-directory .option:hover .follow-directory-4{
     display: block;
 }
 .sub-directory i{
@@ -89,15 +98,29 @@
     top: 12px;
     right: 20px;
 }
-.follow-directory{
-    /*display: none;*/
+.follow-directory-1, .follow-directory-2, .follow-directory-3, .follow-directory-4{
+    display: none;
     position: absolute;
-    width: 796px;
     height: 460px;
-    z-index: 1;
     left: 234px;
     top: 0;
     border: 1px solid #e0e0e0;
+}
+.follow-directory-1{
+    width: 796px;
+    z-index: 1;
+}
+.follow-directory-2{
+    width: 993px;
+    z-index: 2;
+}
+.follow-directory-3{
+    width: 531px;
+    z-index: 3;
+}
+.follow-directory-4{
+    width: 266px;
+    z-index: 4;
 }
 
 .next-posterity{
@@ -116,30 +139,37 @@
     margin-right: 12px;
     vertical-align: middle;
 }
-.link1{
+.link1, .link{
     display: inline-block;
-    width: 170px;
+    width: 265px;
     padding: 18px 20px ;
-    padding-right: 0;
     color: #333333;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 40px;
 }
+.link1{
+    width: 170px;
+    padding-right: 0;
+ }
+
 .link1:hover{
     color: #ff6700;
 }
+.link:hover{
+    color: #ff6700;
+}
 .link2{
-     display: inline-block;
-     top: 26px;
-     right: 10px;
-     width: 58px;
-     height: 22px;
+    display: inline-block;
+    top: 26px;
+    right: 10px;
+    width: 58px;
+    height: 22px;
     line-height: 22px;
     text-align: center;
     cursor: pointer;
     font-size: 12px;
     color: #ff6700;
-     background: #ffffff;
+    background: #ffffff;
     border: 1px solid #b0b0b0;
  }
 .link2:hover{
