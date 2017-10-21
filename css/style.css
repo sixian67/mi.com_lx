@@ -19,6 +19,9 @@ img{
     width: 1226px;
     margin: 0 auto;
 }
+body{
+    height: 10000px;
+}
 /*banner开始*/
 .banner{
     background: url("../img/banner.jpg") no-repeat 50% 50%;

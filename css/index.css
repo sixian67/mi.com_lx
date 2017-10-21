@@ -64,10 +64,11 @@
     width: 234px;
     height: 420px;
     padding: 20px 0;
+    background: rgba(0,0,0,0.5);
 }
 .sub-directory .title{
     position: relative;
-    color: #fffdef;
+    color: #ffffff;
     display: block;
     height: 42px;
     line-height: 42px;
@@ -98,29 +99,27 @@
     top: 12px;
     right: 20px;
 }
-.follow-directory-1, .follow-directory-2, .follow-directory-3, .follow-directory-4{
+.follow-directory-1,.follow-directory-2,.follow-directory-3,.follow-directory-4{
     display: none;
+    background: #ffffff;
     position: absolute;
+    width: 796px;
     height: 460px;
     left: 234px;
     top: 0;
-    border: 1px solid #e0e0e0;
-}
-.follow-directory-1{
-    width: 796px;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
     z-index: 1;
 }
+
 .follow-directory-2{
     width: 993px;
-    z-index: 2;
 }
 .follow-directory-3{
     width: 531px;
-    z-index: 3;
 }
 .follow-directory-4{
     width: 266px;
-    z-index: 4;
 }
 
 .next-posterity{
@@ -129,15 +128,22 @@
     height: 460px;
     float: left;
 }
+.follow-directory-2 .next-posterity{
+    width: 248px;
+}
 .next-posterity li{
     width: 265px;
+    height: 76px;
+}
+.follow-directory-2 li{
+    width: 226px;
     height: 76px;
 }
 .next-posterity img{
     width: 40px;
     height: 40px;
     margin-right: 12px;
-    vertical-align: middle;
+    vertical-align: middle;/*将图片和文字套在一起时，文字居中*/
 }
 .link1, .link{
     display: inline-block;
