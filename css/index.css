@@ -419,6 +419,7 @@
     background: #ffffff;
     float: left;
     margin-left: 14px;
+    margin-bottom: 14px;
 }
 .bd-img-top{
     margin-bottom: 14px;
@@ -449,5 +450,58 @@
     color: #ff6700;
     font-size: 14px;
     text-align: center;
+}
+
+
+.bd-item-sub img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+.bd-item-sub{
+    height: 93px;
+    width: 234px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    padding-top: 50px;
+    position: relative;
+    float: left;
+    background: #ffffff;
+}
+.bd-sub-img-box{
+    display: block;
+    text-align: center;
+}
+.bd-sub-title{
+    color: #333333;
+    font-size: 14px;
+    display: inline-block;
+    margin: -10px 110px 5px 30px;
+}
+.bd-sub-price{
+    color: #ff6700;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-right: 110px;
+}
+.bd-sub-more{
+    color: #333;
+    margin:0 110px 0 30px;
+    display: block;
+    font-size: 18px;
+}
+.bd-sub-more span{
+    color: #757575;
+    font-size: 12px;
+    display: block;
+}
+.bd-sub-more i{
+    font-size: 48px;
+    line-height: 48px;
+    color: #ff6700;
+    position: absolute;
+    float: left;
+    top: 48px;
+    right: 35px;
 }
 /*家电结束*/
