@@ -413,6 +413,25 @@
     float: right;
     width: 992px;
 }
+
+.box-right .flag-saleoff,.box-right .flag-new{
+    width: 64px;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -32px;
+ }
+.box-right .flag-saleoff{
+    background: #e53935;
+}
+.box-right .flag-new{
+    background: #83c44e;
+}
 .bd-item{
     width: 234px;
     height: 300px;
@@ -420,10 +439,9 @@
     float: left;
     margin-left: 14px;
     margin-bottom: 14px;
+    position: relative;
 }
-.bd-img-top{
-    margin-bottom: 14px;
-}
+
 .bd-img-box{
     display: block;
     text-align: center;
@@ -451,8 +469,44 @@
     font-size: 14px;
     text-align: center;
 }
-
-
+.bd-price del{
+    color: #b0b0b0;
+}
+.review-warpper{
+    position: absolute;
+    background: #ff6700;
+    width: 234px;
+    height: 0px;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    /*opacity: 0;*//*官网加的透明度，此处官网写法不同*/
+}
+.bd-item:hover .review-warpper{
+    animation: appear 0.3s ease-in forwards;
+}
+@keyframes appear {
+    100%{
+        height: 75px;
+    }
+}
+.review-warpper a{
+    display: block;
+    padding:8px 30px;
+    outline: 0;
+}
+.review-warpper .review{
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+.review-warpper .author{
+    color: rgba(255,255,255,0.6);
+    text-overflow: ellipsis; /*text-overflow 属性规定当文本溢出包含元素时发生的事情。ellipsis属性：显示省略符号来代表被修剪的文本。*/
+    white-space: nowrap;/*规定段落中的文本不进行换行,nowrap属性：文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。*/
+    overflow: hidden;
+}
 .bd-item-sub img{
     position: absolute;
     width: 80px;
